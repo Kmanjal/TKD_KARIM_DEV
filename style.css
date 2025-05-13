@@ -26,8 +26,8 @@ body,h1{/*reinitialisation du margin et du padding*/
     font-weight:bold;
 }
 .nav_bar{
-    display: inline-flex;
-    gap: 550px;
+    display: flex;
+    gap: 350px;
 }
 
 .nav_bar a{
@@ -35,27 +35,100 @@ body,h1{/*reinitialisation du margin et du padding*/
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    padding: 15px;
+    border: 5px solid #ccc;
+    border-radius: 100px;
+    background-color: #f9f9f9;
 }
 .nav_bar a:hover{
     color: #555;
     text-decoration: underline;
 }
+ :root{
+    --noir:#000000;
+    --blanc:#ffffff;
+    --gris-clair:#f3f3f3;
+    --radius: 8px;
+ }
 
-.nav_bar #fa{
-    padding: 10px;
-    border: 5px solid #ccc;
-    border-radius: 50px;
-    background-color: #f9f9f9;
-}
-.nav_bar #sa{
-    padding: 10px;
-    border: 5px solid #ccc;
-    border-radius: 50px;
-    background-color: #f9f9f9;
-}
-.nav_bar #ta{
-    padding: 10px;
-    border: 5px solid #ccc;
-    border-radius: 50px;
-    background-color: #f9f9f9;
-}
+ main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ .presentation{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 4rem;
+ }
+ .highlight{
+    background-color: var(--noir);
+    color: var(--blanc);
+    padding: 0 0.5rem;
+    border-radius: var(--radius);
+ }
+
+ section{
+    margin-bottom: 5rem;
+ }
+ h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+ }
+ .skills-card{
+    background: var(--gris-clair);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    transition: transform 0.3;
+ }
+
+ .skills-card:hover{
+    transform: translateY(-5px);
+ }
+ .timelines-item{
+    background: var(--gris-clair);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: var(--radius);
+    border-left: 4px solid var(--noir);
+ }
+ .projets-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 2rem;
+ }
+ .projets-card{
+    border: 1px solid #ddd;
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: transform 0.3s;
+    background: var(--gris-clair);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: var(--radius);
+    border-left: 4px solid var(--noir);
+ }
+ .projets-card:hover{
+    transform: scale(1.02);
+ }
+ .projet-content{
+    padding: 1rem;
+ }
+ .btn{
+    display: inline-block;
+    background: var(--noir);
+    color: var(--blanc);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    text-decoration: none;
+    margin-top: 1rem;
+ }
+ .btn:hover{
+    opacity: 5;
+ }
