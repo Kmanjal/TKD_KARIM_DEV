@@ -52,6 +52,7 @@ body,h1{/*reinitialisation du margin et du padding*/
  }
 
  main{
+    background-image: url("img/pexels-souvenirpixels-417074.jpg");
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
@@ -175,3 +176,5 @@ body,h1{/*reinitialisation du margin et du padding*/
 #icon{
    justify-content: center;
 }
+.profile-pic { width: 150px; border-radius: 50%; }
+.presentation-text{text-align: center;}
