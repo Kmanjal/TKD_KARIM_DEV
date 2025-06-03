@@ -27,7 +27,7 @@ body,h1{/*reinitialisation du margin et du padding*/
 }
 .nav_bar{
     display: flex;
-    gap: 600px;
+    gap: 300px;
 }
 
 .nav_bar a{
