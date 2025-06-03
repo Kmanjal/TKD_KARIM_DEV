@@ -83,7 +83,9 @@ h1{
     
 }
 
-@media only screen and(max-width: 500px)
-{
-   
+@media only screnn and(max-width: 500px){
+    header{
+        height: auto;
+        padding: 5px 0;
+    }
 }
