@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-image: url(img/photo_2025-06-03_09-06-38.jpg);
+   
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 20px;
+}
+
+.corps {
+    max-width: 600px;
+    margin: 0 auto;
+    background-image: url(img/photo_2025-06-03_09-06-29.jpg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    color: whitesmoke;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+h1{
+    background-image:linear-gradient(to right,red,blue,green,yellow,white);
+    animation: animate 5s linear infinite;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+@keyframes animate {
+    to{
+        background-position: 400px;
+    }
+    
+}
+
+@media only screen and(max-width: 500px)
+{
+   
+}
