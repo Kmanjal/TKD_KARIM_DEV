@@ -156,3 +156,10 @@ body,h1{/*reinitialisation du margin et du padding*/
 .profile-pic { width: 150px; border-radius: 50%; }
 .presentation-text{text-align: center;}
 .photo{ width: 250px; border-radius: 50%;}
+
+@media only screnn and(max-width: 500px){
+    header{
+        height: auto;
+        padding: 5px 0;
+    }
+}
